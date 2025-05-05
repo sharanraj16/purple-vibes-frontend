@@ -110,9 +110,11 @@ function SignInForm() {
         className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
       >
         <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
-        />
+  className={appStyles.FillerImage}
+  src={"https://res.cloudinary.com/dqmmiaf0y/image/upload/v1746466688/signin_k5t4zp.jpg"}
+  alt="Signin page illustration"
+/>
+
       </Col>
     </Row>
   );

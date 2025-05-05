@@ -1,12 +1,68 @@
 .NavBar {
-    background-color: #ffffff;
-    border: 1px solid #dadadf;
-  }
-  
-  .NavLink {
-    padding: 5px;
-  }
-  
-  .Active i {
-    color: #ac24e2;
-  }
+  background: linear-gradient(135deg, #6a0dad, #ac24e2); /* Gradient purple background */
+  border: 1px solid #ffffff; /* White border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for a more polished look */
+  padding: 10px 0; /* Padding to give more space around the navbar */
+}
+
+.NavLink {
+  padding: 12px 20px; /* Slightly larger padding for better click areas */
+  color: #ffffff; /* White text color for the links */
+  text-decoration: none;
+  font-weight: 600; /* Medium bold weight for readability */
+  font-size: 16px; /* Increased font size for better readability */
+  letter-spacing: 1px; /* Slight letter-spacing for better text clarity */
+  transition: all 0.3s ease; /* Smooth transition for color, scale, and other properties */
+  display: inline-flex;
+  align-items: center; /* Vertically center icons */
+}
+
+.NavLink i {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 18px; /* Consistent icon size */
+  transition: all 0.3s ease; /* Smooth transition for icon color change */
+}
+
+.NavLink:hover {
+  color: #ffd700; /* Gold color on hover */
+  transform: scale(1.08); /* Slightly bigger scale effect for better hover interaction */
+  text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.7); /* Glowing text effect on hover */
+}
+
+.NavLink i:hover {
+  color: #ffd700; /* Gold color for the icon on hover */
+}
+
+.Active {
+  position: relative; /* Allows us to add a glowing effect around the active link */
+}
+
+.Active i {
+  color: #ffffff; /* Keep the icon white when active */
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(172, 36, 226, 0.8); /* Glowing effect on active icons */
+}
+
+.NavLink:focus,
+.NavLink:hover {
+  outline: none;
+  border-bottom: 3px solid #ffd700; /* Slightly thicker gold underline */
+  padding-bottom: 8px; /* Add padding to bottom for a better hover effect */
+}
+
+.NavLink:active {
+  color: #ffd700; /* Gold color when the link is active */
+}
+
+.NavBar .navbar-toggler {
+  border-color: #ffffff; /* White border for the toggle button */
+}
+
+.NavBar .navbar-toggler-icon {
+  background-color: #ffffff; /* White icon for the toggle */
+}
+
+.NavBar .navbar-toggler:hover {
+  background-color: #ac24e2; /* Slight purple background when toggler is hovered */
+  border-color: #ac24e2; /* Matching border color */
+}
