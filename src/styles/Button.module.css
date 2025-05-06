@@ -7,7 +7,6 @@
   margin-left: 2px;
   margin-right: 2px;
   min-width: 75px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and transform */
 }
 
 .Button:hover {
@@ -17,15 +16,15 @@
 }
 
 .Button:hover:active {
-  background-color: #fdfdff !important; /* Slight background change on click */
+  background-color: var(--bs-primary) !important; /* Purple on hover */
 }
 
 .Button:active {
-  background-color: #6819a4 !important; /* Darker purple on click */
+  background-color: var(--bs-primary) !important; /* Purple when active */
 }
 
 .Button:focus {
-  background-color: #dd7de6; /* Light purple on focus */
+  background-color: var(--bs-primary); /* Purple when focused */
 }
 
 .Wide {
@@ -33,34 +32,35 @@
   width: 100%;
 }
 
+/* Purple Button Styles */
 .Blue,
 .BlueOutline:hover,
 .Bright:hover {
-  background-color: #6a0dad; /* Purple background for Blue and Bright button hover */
+  background-color: var(--bs-primary); /* Purple background */
   color: #ffffff; /* White text */
 }
 
 .BlueOutline,
 .Blue:hover {
-  background-color: #ffffff; /* White background for outline buttons */
-  color: #6a0dad; /* Purple text */
-  border: 1px solid #6a0dad; /* Purple border for BlueOutline and Blue buttons */
+  background-color: #ffffff; /* White background for outline */
+  color: var(--bs-primary); /* Purple text */
+  border: 1px solid var(--bs-primary); /* Purple border */
 }
 
 .Black,
 .BlackOutline:hover {
-  background-color: #6a0dad; /* Purple background for Black button */
-  color: aliceblue; /* Light text color */
+  background-color: #242a3d; /* Dark background for contrast */
+  color: aliceblue; /* Light text */
 }
 
 .Black:hover,
 .BlackOutline {
-  background-color: aliceblue; /* Light background on hover for Black buttons */
-  color: #6a0dad; /* Purple text on hover for BlackOutline */
-  border-color: #6a0dad; /* Purple border */
+  background-color: aliceblue; /* Light background for hover */
+  color: #242a3d; /* Dark text */
 }
 
 .Bright {
-  background-color: #9b30b0; /* Lighter purple for Bright button */
-  color: #ffffff; /* White text */
+  background-color: #da7ee2;
+  color: var(--bs-primary); /* Purple text */
 }
+

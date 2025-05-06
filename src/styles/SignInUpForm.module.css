@@ -1,17 +1,20 @@
+/* Full height row to adjust layout */
 .Row {
   height: calc(100vh - 81px);
 }
 
+/* Input fields styled with purple theme */
 .Input {
   background: #ffffff;
-  border: 1px solid #e3d4f1; /* Lighter purple border */
+  border: 1px solid #6f42c1; /* Purple border */
   box-sizing: border-box;
   border-radius: 2px;
-  color: #6a0dad; /* Purple text */
+  color: #6f42c1; /* Purple text */
   text-align: center;
   padding: 10px;
 }
 
+/* Header styled with purple theme */
 .Header {
   font-style: normal;
   font-weight: bold;
@@ -20,9 +23,10 @@
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #6a0dad; /* Purple header */
+  color: #6f42c1; /* Purple header */
 }
 
+/* Links styled with purple theme */
 .Link {
   text-decoration: none;
   text-align: center;
@@ -36,7 +40,7 @@
 
 .Container {
   padding: 30px 10px;
-  background-color: #f4e1f7; /* Light purple background for the page */
+  background-color: #e9d3f7; /* Light purple background for the page */
 }
 
 .SignInCol {
@@ -45,4 +49,24 @@
 
 .SignUpCol {
   height: 375px;
+}
+
+/* Adding a hover effect to the input field */
+.Input:hover {
+  border-color: #5a33a2; /* Darker purple border on hover */
+  box-shadow: 0 0 5px #6f42c1; /* Purple glow effect */
+}
+
+/* Adding hover effects for links */
+.Link:hover {
+  color: #6f42c1; /* Purple color when hovering over links */
+}
+
+.Link span:hover {
+  color: #6f42c1; /* Purple color on hover for span inside the link */
+}
+
+/* Full background purple gradient for the page */
+body {
+  background: linear-gradient(135deg, #6f42c1, #9b30b0); /* Purple gradient background */
 }
