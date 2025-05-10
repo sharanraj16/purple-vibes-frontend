@@ -2,7 +2,7 @@
 
 # 💜 Purple Vibes – Share Your World
 
-![Purple Vibes UI](https://link-to-your-image.com/image.png)
+![Purple Vibes UI](src\assets\amiresponsive.png)
 
 **Purple Vibes** is a full-stack social web application where users can express themselves by sharing stories, images, and experiences. The platform is designed to encourage interaction, creativity, and community-building in a visually engaging and secure environment.
 
