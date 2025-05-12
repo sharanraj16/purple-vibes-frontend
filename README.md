@@ -274,4 +274,4 @@ Creating **Purple Vibes** has been an eye-opening, transformative journey. It ch
 
 ---
 
-Would you like this as a downloadable `.md` file or help embedding this directly into your GitHub project?
+
