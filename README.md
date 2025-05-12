@@ -56,6 +56,13 @@ As the developer and site owner, I aim to:
 * Offer **admin control**, logging, and activity tracking (future scope)
 
 ---
+![Purple Vibes UI](src/assets/1.png
+
+![Purple Vibes UI](src/assets/2.png
+
+![Purple Vibes UI](src/assets/3.png
+
+![Purple Vibes UI](src/assets/4.png
 
 ## 🧩 Features Breakdown
 
