@@ -62,7 +62,7 @@ The testing approach for **Purple Vibes** includes:
   * User cannot log in with invalid credentials.
   * User can log out successfully.
 
-  ![User Authentication](path/to/your/image.png)
+  
 
 ---
 
@@ -75,7 +75,7 @@ The testing approach for **Purple Vibes** includes:
   * User can upload and change their profile picture.
   * User can delete their account.
 
-  ![Profile Management](path/to/your/image.png)
+
 
 ---
 
@@ -89,7 +89,7 @@ The testing approach for **Purple Vibes** includes:
   * User can edit their own post.
   * User can delete their own post.
 
-  ![Posts Creation](path/to/your/image.png)
+  
 
 ---
 
@@ -103,7 +103,7 @@ The testing approach for **Purple Vibes** includes:
   * User can comment on a post.
   * User can delete their own comment.
 
-  ![Post Interactions](path/to/your/image.png)
+  
 
 ---
 
@@ -116,7 +116,7 @@ The testing approach for **Purple Vibes** includes:
   * User can edit their comment.
   * User can delete their comment.
 
-  ![Comments](path/to/your/image.png)
+  
 
 ---
 
