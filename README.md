@@ -54,6 +54,19 @@ As the developer and site owner, I aim to:
 * **Boost user retention** through interactive features
 * Enable **scalability** for future feature rollouts
 * Offer **admin control**, logging, and activity tracking (future scope)
+---
+Tools Used For Agile development
+GitHub Projects for tracking sprints and issues
+
+GitHub Issues for writing user stories with clear acceptance criteria
+
+Commits linked to issues for traceability and progress updates
+
+The project board can be found here
+
+Back to Top
+---
+![Purple Vibes UI](src/assets/5.png)
 
 ---
 ![Purple Vibes UI](src/assets/1.png)
