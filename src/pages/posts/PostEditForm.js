@@ -25,6 +25,9 @@ function PostEditForm() {
   });
   const { title, content, image } = postData;
 
+  // NEW: track the actual image file selected
+  const [imageFile, setImageFile] = useState(null);
+
   const imageInput = useRef(null);
   const history = useHistory();
   const { id } = useParams();
@@ -58,6 +61,8 @@ function PostEditForm() {
         ...postData,
         image: URL.createObjectURL(event.target.files[0]),
       });
+      // NEW: save the selected file here
+      setImageFile(event.target.files[0]);
     }
   };
 
@@ -68,8 +73,9 @@ function PostEditForm() {
     formData.append("title", title);
     formData.append("content", content);
 
-    if (imageInput?.current?.files[0]) {
-      formData.append("image", imageInput.current.files[0]);
+    // UPDATED: use imageFile state instead of ref to get the file
+    if (imageFile) {
+      formData.append("image", imageFile);
     }
 
     try {
