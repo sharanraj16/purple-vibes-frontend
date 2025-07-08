@@ -17,6 +17,7 @@ import { axiosReq } from "../../api/axiosDefaults";
 
 function PostEditForm() {
   const [errors, setErrors] = useState({});
+  const [notification, setNotification] = useState(null); // notification state
 
   const [postData, setPostData] = useState({
     title: "",
@@ -25,7 +26,6 @@ function PostEditForm() {
   });
   const { title, content, image } = postData;
 
-  // NEW: track the actual image file selected
   const [imageFile, setImageFile] = useState(null);
 
   const imageInput = useRef(null);
@@ -38,7 +38,11 @@ function PostEditForm() {
         const { data } = await axiosReq.get(`/posts/${id}/`);
         const { title, content, image, is_owner } = data;
 
-        is_owner ? setPostData({ title, content, image }) : history.push("/");
+        if (is_owner) {
+          setPostData({ title, content, image });
+        } else {
+          history.push("/");
+        }
       } catch (err) {
         console.log(err);
       }
@@ -61,7 +65,6 @@ function PostEditForm() {
         ...postData,
         image: URL.createObjectURL(event.target.files[0]),
       });
-      // NEW: save the selected file here
       setImageFile(event.target.files[0]);
     }
   };
@@ -73,18 +76,21 @@ function PostEditForm() {
     formData.append("title", title);
     formData.append("content", content);
 
-    // UPDATED: use imageFile state instead of ref to get the file
     if (imageFile) {
       formData.append("image", imageFile);
     }
 
     try {
       await axiosReq.put(`/posts/${id}/`, formData);
-      history.push(`/posts/${id}`);
+      setNotification({ type: "success", message: "Post updated successfully!" });
+
+      // Show notification briefly before redirecting
+      setTimeout(() => history.push(`/posts/${id}`), 1200);
     } catch (err) {
       console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
+        setNotification({ type: "danger", message: "Error updating post." });
       }
     }
   };
@@ -136,6 +142,18 @@ function PostEditForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
+      {/* Notification Alert */}
+      {notification && (
+        <Alert
+          variant={notification.type}
+          onClose={() => setNotification(null)}
+          dismissible
+          className="mt-2"
+        >
+          {notification.message}
+        </Alert>
+      )}
+
       <Row>
         <Col className="py-2 p-0 p-md-2" md={7} lg={8}>
           <Container
