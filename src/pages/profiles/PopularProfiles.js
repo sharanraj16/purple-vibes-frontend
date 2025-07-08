@@ -5,11 +5,6 @@ import Asset from "../../components/Asset";
 import { useProfileData } from "../../contexts/ProfileDataContext";
 import Profile from "./Profile";
 
-
-
-
-
-
 const PopularProfiles = ({ mobile }) => {
   const { popularProfiles } = useProfileData();
 
@@ -19,7 +14,7 @@ const PopularProfiles = ({ mobile }) => {
         mobile && "d-lg-none text-center mb-3"
       }`}
     >
-      {popularProfiles.results.length ? (
+      {popularProfiles.results && popularProfiles.results.length > 0 ? (
         <>
           <h5 className="mb-3">Most Followed Profiles</h5>
           {mobile ? (
