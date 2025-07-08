@@ -17,6 +17,9 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Asset from "../../components/Asset";
 import { fetchMoreData } from "../../utils/utils";
 
+// Import PopularProfiles component (adjust the path if needed)
+import PopularProfiles from "../profiles/PopularProfiles";
+
 function PostPage() {
   const { id } = useParams();
   const [post, setPost] = useState({ results: [] });
@@ -45,8 +48,12 @@ function PostPage() {
   return (
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
-        <p>Popular profiles for mobile</p>
+        {/* Popular profiles component for mobile */}
+        <PopularProfiles mobile />
+
+        {/* Post content */}
         <Post {...post.results[0]} setPosts={setPost} postPage />
+
         <Container className={appStyles.Content}>
           {currentUser ? (
             <CommentCreateForm
@@ -59,6 +66,7 @@ function PostPage() {
           ) : comments.results.length ? (
             "Comments"
           ) : null}
+
           {comments.results.length ? (
             <InfiniteScroll
               children={comments.results.map((comment) => (
@@ -81,8 +89,10 @@ function PostPage() {
           )}
         </Container>
       </Col>
+
       <Col lg={4} className="d-none d-lg-block p-0 p-lg-2">
-        Popular profiles for desktop
+        {/* Popular profiles component for desktop */}
+        <PopularProfiles />
       </Col>
     </Row>
   );
