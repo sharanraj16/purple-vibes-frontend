@@ -21,7 +21,7 @@ const PopularProfiles = ({ mobile }) => {
     >
       {popularProfiles.results.length ? (
         <>
-          <p>Most followed profiles.</p>
+          <h5 className="mb-3">Most Followed Profiles</h5>
           {mobile ? (
             <div className="d-flex justify-content-around">
               {popularProfiles.results.slice(0, 4).map((profile) => (
@@ -35,7 +35,7 @@ const PopularProfiles = ({ mobile }) => {
           )}
         </>
       ) : (
-        <Asset spinner />
+        <Asset message="No popular profiles found yet." />
       )}
     </Container>
   );
