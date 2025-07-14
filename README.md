@@ -384,6 +384,8 @@ For detailed frontend deployment instructions, refer to the Purple Vibes Front-E
 
 This deployment approach ensures a smooth continuous integration pipeline for both frontend and backend, with the backend securely hosted on Heroku and the frontend available via GitHub Pages or other static hosting platforms.
 ---
+
+
 ## Improvements and Issue Resolutions
 
 This project has undergone a thorough review and improvement process based on detailed feedback received during the initial assessment. I am pleased to confirm that **all issues previously marked as "No" have been fully addressed and rectified** in the current version of the project. The key enhancements include:
@@ -410,7 +412,7 @@ This project has undergone a thorough review and improvement process based on de
 I am eager to continue developing my skills and look forward to applying these improvements in upcoming projects. I am planning to pursue a career as a data analyst, and receiving this certification is important for progressing with Code Institute’s next course. Thank you for your consideration and understanding.
 ---
 ## 👏 Acknowledgments
-
+---
 Big thanks to:
 
 * **Code Institute** – Curriculum & community
