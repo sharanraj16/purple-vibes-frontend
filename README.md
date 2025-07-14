@@ -411,19 +411,19 @@ This project has undergone a thorough review and improvement process based on de
 
 I am eager to continue developing my skills and look forward to applying these improvements in upcoming projects. I am planning to pursue a career as a data analyst, and receiving this certification is important for progressing with Code Institute’s next course. Thank you for your consideration and understanding.
 ---
-## 👏 Acknowledgments
+##👏 Acknowledgments
 ---
 Big thanks to:
 
-* **Code Institute** – Curriculum & community
-* **Mentor** – For feedback and direction
-* **Jenitha (my wife)** – For endless support
-* **Kelly Hutchison** – For encouragement
-* **Sylveria Ozioma** – For insights and feedback
+ **Code Institute** – Curriculum & community
+ **Mentor** – For feedback and direction
+ **Jenitha (my wife)** – For endless support
+ **Kelly Hutchison** – For encouragement
+ **Sylveria Ozioma** – For insights and feedback
 
 ---
 
-## 🚀 Final Thoughts
+##🚀 Final Thoughts
 
 Creating **Purple Vibes** has been an eye-opening, transformative journey. It challenged me to think like a developer, act like a product designer, and test like a QA engineer. I’ve learned not only how to code, but how to build scalable, user-friendly web applications.
 
