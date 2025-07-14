@@ -248,6 +248,110 @@ Project tasks, issues, and progress are tracked here:
 🗂️ [Purple Vibes Project Board](https://github.com/your-username/purple-vibes/projects/1)
 
 ---
+🚢 Deployment
+This section explains the deployment process for both the Purple Vibes Frontend and Backend API, including pushing code to GitHub, cloning repositories, and deploying the backend to Heroku.
+
+1. Cloning the Repositories from GitHub
+To work locally on the project, start by cloning the repositories:
+
+Clone the frontend repo:
+
+git clone https://github.com/sharanraj16/purple-vibes-frontend.git
+
+Clone the backend repo:
+
+git clone https://github.com/sharanraj16/purple-vibes-backend.git
+
+2. Pushing Frontend and Backend to GitHub
+Step 1: Initialize Git in your project folder (if not already done):
+
+git init
+
+Step 2: Stage all changes:
+
+git add .
+
+Step 3: Commit your changes:
+
+git commit -m "Initial commit for Purple Vibes"
+
+Step 4: Create repositories on GitHub:
+
+Frontend repo: purple-vibes-frontend
+
+Backend repo: purple-vibes-backend
+
+Visit https://github.com/new to create the repos.
+
+Step 5: Link your local projects to GitHub repos
+Replace <github-username> accordingly.
+
+Frontend:
+
+git remote add origin https://github.com/<github-username>/purple-vibes-frontend.git
+git push -u origin main
+
+Backend:
+
+git remote add origin https://github.com/<github-username>/purple-vibes-backend.git
+git push -u origin main
+
+3. Deploying Backend API to Heroku (Short Version)
+Log in to Heroku CLI:
+
+heroku login
+
+Create a new Heroku app:
+
+heroku create purple-vibes-backend
+
+Add Heroku remote to your backend repo:
+
+heroku git:remote -a purple-vibes-backend
+
+Push code to Heroku:
+
+git push heroku main
+
+Set environment variables in Heroku dashboard (Settings → Config Vars):
+
+SECRET_KEY: Your Django secret key
+
+DEBUG: False
+
+ALLOWED_HOSTS: purple-vibes-backend.herokuapp.com
+
+CLOUDINARY_URL: Your Cloudinary API URL
+
+Run migrations and collect static files:
+
+heroku run python manage.py migrate
+heroku run python manage.py collectstatic --noinput
+
+Open your deployed backend:
+
+heroku open
+
+Backend URL:
+👉 https://purple-vibes-backend.herokuapp.com/
+
+4. Deploying Frontend
+Push frontend code to GitHub (already done in Step 2).
+Host frontend on platforms like GitHub Pages, Netlify, or Vercel.
+
+Example: Deploy on GitHub Pages
+
+In your frontend repo, create a gh-pages branch with the production build.
+Run the following command to create a production build:
+
+npm run build
+
+Push the build folder to the gh-pages branch.
+Enable GitHub Pages in your repo settings.
+
+For detailed frontend deployment instructions, refer to the Purple Vibes Front-End Repo.
+
+This deployment approach ensures a smooth continuous integration pipeline for both frontend and backend, with the backend securely hosted on Heroku and the frontend available via GitHub Pages or other static hosting platforms.
 
 
 ## Improvements and Issue Resolutions
