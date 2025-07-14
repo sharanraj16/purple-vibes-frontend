@@ -38,7 +38,7 @@ The following wireframes were created in **Balsamiq** to guide the initial layou
 
 | Home Feed | Upload Detail | Login/Signup | Logout/Signout |
 |-----------|-------------|--------------|--------------|
-| ![Wireframe 1](src/assets/wireframe1.png) | ![Wireframe 2](src/assets/wireframe2.png) | ![Wireframe 3](src/assets/wireframe3.png)  ![Wireframe 4](src/assets/wireframe4.png) 
+ ![Wireframe 1](src/assets/wireframe1.png)  ![Wireframe 2](src/assets/wireframe2.png)  ![Wireframe 3](src/assets/wireframe3.png)  ![Wireframe 4](src/assets/wireframe4.png) 
 
 
 ## 🎯 Project Objectives
