@@ -289,11 +289,11 @@ Edit
 git commit -m "Initial commit for Purple Vibes"
 Step 4: Create repositories on GitHub:
 
-For frontend, create a repo named: purple-vibes-frontend
+Frontend repo: purple-vibes-frontend
 
-For backend, create a repo named: purple-vibes-backend
+Backend repo: purple-vibes-backend
 
-Visit https://github.com/new to create repos.
+Visit https://github.com/new to create the repos.
 
 Step 5: Link your local projects to GitHub repos
 Replace <github-username> accordingly.
@@ -312,54 +312,53 @@ Copy
 Edit
 git remote add origin https://github.com/<github-username>/purple-vibes-backend.git
 git push -u origin main
-3. Deploying Backend API to Heroku
-Step 1: Login to Heroku CLI:
+3. Deploying Backend API to Heroku (Short Version)
+Log in to Heroku CLI:
 
 bash
 Copy
 Edit
 heroku login
-Step 2: Create a Heroku app:
+Create a new Heroku app:
 
 bash
 Copy
 Edit
 heroku create purple-vibes-backend
-Step 3: Add Heroku remote to your backend Git repo:
+Add Heroku remote to your backend repo:
 
 bash
 Copy
 Edit
 heroku git:remote -a purple-vibes-backend
-Step 4: Push backend code to Heroku:
+Push code to Heroku:
 
 bash
 Copy
 Edit
 git push heroku main
-Step 5: Set environment variables in Heroku dashboard under Settings → Config Vars
+Set environment variables in Heroku dashboard (Settings → Config Vars):
 
 Key	Value
 SECRET_KEY	Your Django secret key
 DEBUG	False
 ALLOWED_HOSTS	purple-vibes-backend.herokuapp.com
-DATABASE_URL	Auto provisioned by Heroku
 CLOUDINARY_URL	Your Cloudinary API URL
 
-Step 6: Run migrations and collect static files:
+Run migrations and collect static files:
 
 bash
 Copy
 Edit
 heroku run python manage.py migrate
 heroku run python manage.py collectstatic --noinput
-Step 7: Open your deployed backend API:
+Open your deployed backend:
 
 bash
 Copy
 Edit
 heroku open
-Your backend is live at:
+Backend URL:
 👉 https://purple-vibes-backend.herokuapp.com/
 
 4. Deploying Frontend
@@ -371,17 +370,20 @@ Example: Deploy on GitHub Pages
 
 In your frontend repo, create a gh-pages branch with the production build.
 
-Use npm run build to create a production build.
+Use the following command to create a production build:
 
+bash
+Copy
+Edit
+npm run build
 Push the build folder to the gh-pages branch.
 
-Enable GitHub Pages in repo settings.
+Enable GitHub Pages in your repo settings.
 
-For detailed frontend deployment instructions, check the Purple Vibes Front-End Repo.
+For detailed frontend deployment instructions, refer to the Purple Vibes Front-End Repo.
 
-This deployment approach ensures a smooth continuous integration pipeline for both frontend and backend, with the backend securely hosted on Heroku and the frontend available via GitHub Pages or other static hosting platforms
+This deployment approach ensures a smooth continuous integration pipeline for both frontend and backend, with the backend securely hosted on Heroku and the frontend available via GitHub Pages or other static hosting platforms.
 
-## 🤝 How to Contribute
 
 
 
