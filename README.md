@@ -5,9 +5,11 @@
 ![Purple Vibes UI](src/assets/amiresponsive.png)
 
 
-**Purple Vibes** is a full-stack social web application where users can express themselves by sharing stories, images, and experiences. The platform is designed to encourage interaction, creativity, and community-building in a visually engaging and secure environment.
+**Purple Vibes** is a full-stack social web application where users can express themselves by sharing stories, images, and experiences. The platform is designed to foster creativity, interaction, and community-building within a visually engaging and secure environment.
 
-🎉 This project is my **final milestone submission** for the [Code Institute Full-Stack Developer Program](https://codeinstitute.net), built using the **MERN-adjacent stack** (React + Flask + MongoDB). It is a fully responsive, interactive app built with scalability and user engagement in mind.
+🎉 This project is my **final milestone submission (PP5)** for the Code Institute Full-Stack Developer Program. It is built using a MERN-adjacent stack (React + Flask + MongoDB) and is a fully responsive, interactive app designed with scalability and user engagement in mind.
+
+Project by: Sharanraj Sivakumar
 
 🔗 **Live Site**: [Purple Vibes App](https://purple-vibes-frontend-c1ac08fd7889.herokuapp.com/)
 📂 **Frontend GitHub Repo**: [Frontend Repo](https://github.com/sharanraj16/purple-vibes-frontend)
@@ -445,8 +447,8 @@ Big thanks to:
 
 Creating **Purple Vibes** has been an eye-opening, transformative journey. It challenged me to think like a developer, act like a product designer, and test like a QA engineer. I’ve learned not only how to code, but how to build scalable, user-friendly web applications.
 
-> “Great products begin with empathy, grow with effort, and thrive through community.”  
-> Thank you for visiting Purple Vibes 💜
+ “Great products begin with empathy, grow with effort, and thrive through community.”  
+ # Thank you for visiting Purple Vibes 💜
 
 ---
 
