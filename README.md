@@ -410,28 +410,19 @@ Frontend App → https://purple-vibes-frontend.herokuapp.com/
 
 ## Improvements and Issue Resolutions
 
-This project has undergone a thorough review and improvement process based on detailed feedback received during the initial assessment. I am pleased to confirm that **all issues previously marked as "No" have been fully addressed and rectified** in the current version of the project. The key enhancements include:
+This project has undergone a thorough review and improvement process based on detailed feedback received during the initial assessment. I am pleased to confirm that all issues previously marked as "No" have been fully addressed and rectified in the current version of the project. The key enhancements include:
 
-**Removal of Placeholder Content:**  
-All placeholder text has been replaced with dynamic, functional content across the application, including the Post Details page where "Popular profiles" are now correctly displayed.
+# Improved Post Editing Experience:
+The post editing functionality has been improved so that users no longer need to re-upload images if no changes are made. Existing images are preloaded and persist unless explicitly updated by the user.
 
-**Improved Post Editing Experience:**  
-The post editing functionality has been enhanced so that users no longer need to re-upload images if no changes are made. Existing images are preloaded and persist unless explicitly updated by the user.
-
-**Detailed Deployment Instructions:**  
+# Detailed Deployment Instructions:
 The deployment documentation now contains comprehensive, step-by-step instructions for setting up, configuring, and deploying both the front-end React application and the back-end Django REST API on Heroku, including repository cloning and environment configuration.
 
-**Design Documentation Added:**  
-Wireframes, mockups, and design rationale have been included in the documentation, outlining the user experience improvements and front-end architecture.
+# Design Documentation Added:
+Wireframes, mockups, and design rationale have been added, outlining the user experience improvements and front-end architecture.
 
-**Custom Backend Models:**  
-While this project currently uses models similar to the course walkthrough, I plan to develop more advanced custom backend models in future projects. For example, implementing a **Tagging system** where posts can be tagged with multiple categories, enabling complex many-to-many relationships and custom queries to improve data organization and API functionality. Due to time constraints and personal circumstances, including expecting my third baby this week, I was unable to introduce these larger changes in this submission.
-
-**Commit Message Quality:**  
-Commit messages are now descriptive and clearly reflect the changes made, improving project history readability.  
-*Please note:* This project was completed during a period of serious personal stress. I lost my grandfather, and my grandmother was hospitalized due to this loss. Because of these circumstances, I had to complete the project in a hurry and was unable to maintain detailed commit messages throughout. I appreciate your understanding.
-
-I am eager to continue developing my skills and look forward to applying these improvements in upcoming projects. I am planning to pursue a career as a data analyst, and receiving this certification is important for progressing with Code Institute’s next course. Thank you for your consideration and understanding.
+# Custom Backend Models:
+All core backend models (Post, Profile, Comment, Follower, Like) have been updated with small, safe enhancements that provide scope for future customization. Examples include snippet previews, status checks, convenience methods, and helper functions that make the backend more maintainable and extendable without affecting frontend functionality.
 
 ---
 
@@ -441,7 +432,7 @@ Big thanks to:
 
 - **Code Institute** – Curriculum & community  
 - **Mentor** – For feedback and direction  
-- **Jenitha (my wife)** – For endless support  
+- **Jenitha** – For endless support  
 - **Kelly Hutchison** – For encouragement  
 - **Sylveria Ozioma** – For insights and feedback  
 
