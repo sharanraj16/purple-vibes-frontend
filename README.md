@@ -411,20 +411,20 @@ Frontend App → https://purple-vibes-frontend.herokuapp.com/
 
 
 
-## Improvements and Issue Resolutions
+# Improvements and Issue Resolutions
 
 This project has undergone a thorough review and improvement process based on detailed feedback received during the initial assessment. I am pleased to confirm that all issues previously marked as "No" have been fully addressed and rectified in the current version of the project. The key enhancements include:
 
-# Improved Post Editing Experience:
+### Improved Post Editing Experience:
 The post editing functionality has been improved so that users no longer need to re-upload images if no changes are made. Existing images are preloaded and persist unless explicitly updated by the user.
 
-# Detailed Deployment Instructions:
+### Detailed Deployment Instructions:
 The deployment documentation now contains comprehensive, step-by-step instructions for setting up, configuring, and deploying both the front-end React application and the back-end Django REST API on Heroku, including repository cloning and environment configuration.
 
-# Design Documentation Added:
+### Design Documentation Added:
 Wireframes, mockups, and design rationale have been added, outlining the user experience improvements and front-end architecture.
 
-# Custom Backend Models:
+### Custom Backend Models:
 All core backend models (Post, Profile, Comment, Follower, Like) have been updated with small, safe enhancements that provide scope for future customization. Examples include snippet previews, status checks, convenience methods, and helper functions that make the backend more maintainable and extendable without affecting frontend functionality.
 
 ---
