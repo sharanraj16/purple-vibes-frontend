@@ -32,6 +32,9 @@ Purple Vibes allows users to:
 This platform blends **content creation, social interaction, and personalization** in one seamless UX-focused design.
 
 ---
+## color palette
+
+![Purple Vibes c](src/assets/colortheme.jpg)
 ## 🖼️ Balsamiq Wireframes
 
 The following wireframes were created in **Balsamiq** to guide the initial layout and functionality of Purple Vibes.
