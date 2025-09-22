@@ -348,7 +348,7 @@ heroku run python manage.py migrate -a purple-vibes-backend
 heroku run python manage.py collectstatic --noinput -a purple-vibes-backend
 
 
-✅ Your backend is now live at:
+✅ backend is now live at:
 👉 https://purple-vibes-backend.herokuapp.com/
 
 🔹 Deploying Frontend to Heroku (React)
@@ -389,7 +389,7 @@ Connect GitHub repo purple-vibes-frontend
 
 Enable Automatic Deploys from main
 
-✅ Your frontend is now live at:
+✅  frontend is now live at:
 👉 https://purple-vibes-frontend.herokuapp.com/
 
 🔹 Connecting Frontend to Backend
